@@ -13,7 +13,7 @@
 //
 // --------------------------------------------------------------------------------------------------------------------------------------------
 // Global Variables
-const apiKey = "{INSERT_API_KEY}"; // Replace with your actual API key {INSERT_API_KEY}
+const apiKey = "AIzaSyCnviA1e-SV87jaI_mUXuc45HLiUEMVFWI"; // Replace with your actual API key {INSERT_API_KEY}
 
 // Latitude: 32.6579371, Longitude: -117.0210882
 var address;
