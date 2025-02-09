@@ -28,7 +28,7 @@
     <!-- Frameworks -->
     <script src="components/geotiff/geotiff.js" defer></script>
     <script src="components/proj4/proj4.js" defer></script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key={INSERT_API_KEY}&loading=async&callback=onGoogleMapsLoaded&libraries=maps,marker&v=beta" defer></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnviA1e-SV87jaI_mUXuc45HLiUEMVFWI&loading=async&callback=onGoogleMapsLoaded&libraries=maps,marker&v=beta" defer></script>
 
 
 </head>
