@@ -27,6 +27,7 @@ Follow these steps to set up the Solar API Library in your project:
 ## Video Help
 
 For additional assistance, refer to our how-to video:
+
 - [Watch the Tutorial](https://youtu.be/GmDN6cQD0xU)
 
 ## Required Frameworks
