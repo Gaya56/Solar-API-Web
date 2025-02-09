@@ -1,7 +1,3 @@
-Below is a revised version of your `README.md` file for your GitHub project:
-
----
-
 # Solar_API_Library
 
 This repository contains a collection of functions designed to interact with the Google Solar API using HTML and JavaScript. It's structured to help developers integrate solar data into their web projects efficiently.
@@ -27,6 +23,7 @@ Follow these steps to set up the Solar API Library in your project:
 ## Video Help
 
 For additional assistance, refer to our how-to video:
+
 - [Watch the Tutorial](https://youtu.be/GmDN6cQD0xU)
 
 ## Required Frameworks
