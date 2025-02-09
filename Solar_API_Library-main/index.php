@@ -1,10 +1,3 @@
-<?php
-require 'vendor/autoload.php';
-Dotenv\Dotenv::createImmutable(__DIR__)->load();
-
-$solarApiKey = getenv('SOLAR_API_KEY');
-$mapsApiKey = getenv('MAPS_API_KEY');
-?>
 <!DOCTYPE html>
 <html lang="en">
 
