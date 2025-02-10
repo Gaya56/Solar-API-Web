@@ -12,7 +12,7 @@
 
     <meta name="robots" content="noindex">
 
-    <title>Google Solar API by Interactive Utopia</title>
+    <title>Romulus Solar API First Test</title>
 
     <!-- CSS Framework -->
     <link rel="stylesheet" href="components/bootstrap/bootstrap.min.css">
@@ -39,8 +39,8 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="https://InteractiveUtopia.com" title="Go Home">
-                        <img src="/images/logo.jpg" class="mainLogo" alt="Interactive Utopia Logo" />
+                    <a class="navbar-brand" href="https://www.google.com" title="Go Home">
+                        <img src="/images/logo.jpg" class="mainLogo" alt="Google Logo" />
                     </a>
                 </div>
             </div>
