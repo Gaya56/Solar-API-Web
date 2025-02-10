@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="col-lg d-flex align-items-end justify-content-end">
-                <h1 class="header-title text-right">Solar Power Estimate</h1>
+                <h1 class="header-title text-right">Romulu's Company</h1>
             </div>
         </div>
     </header>
