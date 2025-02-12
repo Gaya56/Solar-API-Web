@@ -118,7 +118,7 @@
             </div>
 
             <!-- Google Solar API Building Insights -->
-            <div>
+            <div class="google_solar_api_data">
                 <h2>Google Solar API Data</h2>
                 <div id="gsa_data"></div>
                 <div>
