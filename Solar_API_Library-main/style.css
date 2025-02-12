@@ -7,9 +7,8 @@ h2 {
 }
 
 .navbar-header {
-    margin-top: .5rem;
     font-weight: bolder;
-    background-color: rgb(0, 51, 102); /* Changed to darker blue */
+    background-color: rgb(2, 58, 114); /* Changed to darker blue */
 }
 
 .navbar-header img { 
@@ -23,8 +22,8 @@ header col {
 }
 
 header {
-    background-color: rgb(0, 51, 102); /* Changed to darker blue */
-    padding: 1rem 0; /* Added padding to cover the entire header */
+    background-color: darkblue; /* Changed to darker blue */
+    padding: 0; /* Added padding to cover the entire header */
 }
 
 .header-title {
@@ -33,9 +32,9 @@ header {
 }
 
 .google_map {
-    width: 70%;
-    height: 350px; /* Reduced size by 30% */
-    border: 5px solid black; /* Added strong borders */
+    width: 99%;
+    height: 350px; 
+    border: 5px solid black; 
 }
 
 .row {
@@ -47,26 +46,39 @@ header {
     margin-top: 1rem;
     padding: 1rem .5rem;
     overflow: hidden;
-    border: 2px solid darkblue;
+    border: 2px solid darkgreen;
 }
 
 .address_container label {
     font-weight: bold;
     margin: .5rem 0;
-    color: darkblue;
+    color: white;
+}
+
+.address_container label {
+    font-weight: bold;
+    margin: .5rem 0;
+    color: white;
+    display: inline-block;
+    width: 20%;
+    vertical-align: middle;
 }
 
 .address_container #property_address_input {
-    width: 100%;
-    padding: .5rem .25rem;
+    width: 50%;
+    padding: .5rem .2rem;
     border: 1px solid darkgreen;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .address_container button {
     padding: .5rem 1.25rem;
     margin-left: 1rem;
-    background-color: rgb(81, 132, 229);;
-    color: white
+    background-color: rgb(81, 132, 229);
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .app_controls {
@@ -82,7 +94,7 @@ header {
 }
 
 .google_solar_api_data {
-    background-color: #f9f9f9;
+    background-color: white; /* Reverted to previous color */
     padding: 1rem;
     border: 2px solid #ccc;
     border-radius: 8px;
