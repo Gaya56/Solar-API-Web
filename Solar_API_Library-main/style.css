@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Kameron');
-
 h1,
 h2 {
     font-family: 'Kameron', serif;
     font-weight: bold;
+    color: darkgreen;
 }
 
 .navbar-header {
@@ -20,6 +20,7 @@ header col {
 
 .header-title {
     margin-bottom: 0;
+    color: darkred;
 }
 
 .google_map {
@@ -36,21 +37,26 @@ header col {
     margin-top: 1rem;
     padding: 1rem .5rem;
     overflow: hidden;
+    border: 2px solid darkblue;
 }
 
 .address_container label {
     font-weight: bold;
     margin: .5rem 0;
+    color: darkblue;
 }
 
 .address_container #property_address_input {
     width: 100%;
     padding: .5rem .25rem;
+    border: 1px solid darkgreen;
 }
 
 .address_container button {
     padding: .5rem 1.25rem;
     margin-left: 1rem;
+    background-color: darkred;
+    color: white;
 }
 
 .app_controls {
@@ -60,4 +66,6 @@ header col {
     vertical-align: middle;
     margin-bottom: 1rem;
     overflow: hidden;
+    border: 2px solid darkgreen;
+    color: darkblue;
 }
