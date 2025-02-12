@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="col-lg d-flex align-items-center justify-content-center">
-                <h1 class="header-title">Romulu's Company</h1>
+                <h1 class="header-title"><strong>Romulu's Company</strong></h1>
             </div>
         </div>
     </header>
