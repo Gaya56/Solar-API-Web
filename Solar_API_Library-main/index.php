@@ -35,6 +35,7 @@
         }
         .address_container {
             background-color: darkgreen; /* Match the header color */
+            margin-top: 0; /* Move the address bar up */
         }
         .app_controls, #gsa_data {
             margin-bottom: 20px;
