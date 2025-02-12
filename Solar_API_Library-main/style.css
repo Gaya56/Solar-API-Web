@@ -3,12 +3,12 @@ h1,
 h2 {
     font-family: 'Kameron', serif;
     font-weight: bold;
-    color: darkgreen;
+    color: darkred;
 }
 
 .navbar-header {
     margin-top: .5rem;
-    background-color: darkblue; /* Added background color */
+    background-color: rgb(211, 240, 94); /* Added background color */
 }
 
 .navbar-header img { 
