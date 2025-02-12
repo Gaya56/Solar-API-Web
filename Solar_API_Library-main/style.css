@@ -4,7 +4,7 @@ h2 {
     font-family: 'Kameron', serif;
     font-weight: bold;
     color: darkgreen;
-}
+    }
 
 .navbar-header {
     margin-top: .5rem;
@@ -21,6 +21,7 @@ header col {
 .header-title {
     margin-bottom: 0;
     color: darkred;
+    background-color:rgb(250, 250, 251)
 }
 
 .google_map {
@@ -56,7 +57,7 @@ header col {
     padding: .5rem 1.25rem;
     margin-left: 1rem;
     background-color: darkred;
-    color: white;
+    color: rgb(239, 245, 247);
 }
 
 .app_controls {
