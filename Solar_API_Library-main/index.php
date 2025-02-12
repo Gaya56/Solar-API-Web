@@ -19,6 +19,28 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <style>
+        .header-title {
+            font-size: 3rem; /* Increase the font size */
+            text-align: center; /* Center the text */
+            white-space: nowrap; /* Ensure the title is on one line */
+        }
+        .navbar-header, .header-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header.container-fluid {
+            padding: 10px 0; /* Reduce the header height */
+        }
+        .address_container {
+            background-color:darkgreen; /* Match the header color */
+        }
+        .app_controls, #gsa_data {
+            margin-bottom: 20px;
+        }
+    </style>
+
     <!-- JavaScript -->
     <!-- Library -->
     <script src="components/gc_solar_api_library/global.js" defer></script>
@@ -35,17 +57,17 @@
 
 <body>
     <!-- Page Header -->
-    <header class="container">
+    <header class="container-fluid d-flex justify-content-center">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 d-flex justify-content-center">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="https://www.google.com" title="Go Home">
                         <img src="/images/logo.jpg" class="mainLogo" alt="Google Logo" />
                     </a>
                 </div>
             </div>
-            <div class="col-lg d-flex align-items-end justify-content-end">
-                <h1 class="header-title text-right">Romulu's Company</h1>
+            <div class="col-lg d-flex align-items-center justify-content-center">
+                <h1 class="header-title">Romulu's Company</h1>
             </div>
         </div>
     </header>
@@ -64,55 +86,54 @@
     </div>
 
     <!-- Google Maps API Container -->
-    <div class="google_map_container">
-        <div id="map" class="google_map"></div>
-        <div id="canvas_div"></div>
-    </div>
-
-    <!-- Google Solar API Controls -->
-    <div class="row app_controls">
-        <div class="col">
-            <div id="overlayControlsSelect">
-                <label for="overlaySelect">Select Layer:</label><br />
-                <select id="overlaySelect">
-                    <option value="0">DSM</option>
-                    <option value="1">RGB</option>
-                    <option value="2" selected>Annual Flux</option>
-                    <option value="3">Monthly Flux</option>
-                    <option value="4">Hourly Flux</option>
-                </select>
-            </div>
-        </div>
-        <div class="col">
-            <label for="monthSelection">Month:</label><label for="monthSlider"><span id="monthName">July</span></label><br />
-            <input type="range" id="monthSlider" min="0" max="11" value="6" step="1">
-        </div>
-        <div class="col">
-            <label for="hourSlider">Select Hour: <span id="hourDisplay">12 PM</span></label><br />
-            <input type="range" id="hourSlider" min="0" max="23" value="12" step="1">
-        </div>
-        <div class="col">
-            <input type="checkbox" id="toggleAllOverlays" onclick="toggleAllOverlays()" checked> Display <br />Overlay
-        </div>
-    </div>
-
-    <!-- Google Solar API Bulding Insights -->
     <div class="row">
-        <div class="col">
-            <h2>Google Solar API Data</h2>
-            <div id="gsa_data"></div>
+        <div class="col-lg-8 google_map_container">
+            <div id="map" class="google_map"></div>
+            <div id="canvas_div"></div>
         </div>
-        <div class="col">
-            <label for="system_modules_watts">Module output (watts):</label><br />
-            <input type="number" name="system_modules_watts" id="system_modules_watts" value="395"><br />
-            <label for="system_modules_range">Modules:</label><br />
-            <input type="range" name="system_modules_range" id="system_modules_range" min="1" max="100">
-            <span id="modules_range_display_qty"></span>
-        </div>
-        <div class="col-1">
-            <p>Total Output:<br />
-                <span id="modules_calculator_display"></span>
-            </p>
+        <div class="col-lg-4">
+            <!-- Google Solar API Controls -->
+            <div class="app_controls">
+                <div id="overlayControlsSelect">
+                    <label for="overlaySelect">Select Layer:</label><br />
+                    <select id="overlaySelect">
+                        <option value="0">DSM</option>
+                        <option value="1">RGB</option>
+                        <option value="2" selected>Annual Flux</option>
+                        <option value="3">Monthly Flux</option>
+                        <option value="4">Hourly Flux</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="monthSelection">Month:</label><label for="monthSlider"><span id="monthName">July</span></label><br />
+                    <input type="range" id="monthSlider" min="0" max="11" value="6" step="1">
+                </div>
+                <div>
+                    <label for="hourSlider">Select Hour: <span id="hourDisplay">12 PM</span></label><br />
+                    <input type="range" id="hourSlider" min="0" max="23" value="12" step="1">
+                </div>
+                <div>
+                    <input type="checkbox" id="toggleAllOverlays" onclick="toggleAllOverlays()" checked> Display <br />Overlay
+                </div>
+            </div>
+
+            <!-- Google Solar API Building Insights -->
+            <div>
+                <h2>Google Solar API Data</h2>
+                <div id="gsa_data"></div>
+                <div>
+                    <label for="system_modules_watts">Module output (watts):</label><br />
+                    <input type="number" name="system_modules_watts" id="system_modules_watts" value="395"><br />
+                    <label for="system_modules_range">Modules:</label><br />
+                    <input type="range" name="system_modules_range" id="system_modules_range" min="1" max="100">
+                    <span id="modules_range_display_qty"></span>
+                </div>
+                <div>
+                    <p>Total Output:<br />
+                        <span id="modules_calculator_display"></span>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
