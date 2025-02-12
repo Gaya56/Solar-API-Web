@@ -2,17 +2,19 @@
 h1,
 h2 {
     font-family: 'Kameron', serif;
-    font-weight: bold;
+    font-weight: bolder;
     color: darkred;
 }
 
 .navbar-header {
     margin-top: .5rem;
+    font-weight: bolder;
     background-color: rgb(211, 240, 94); /* Added background color */
 }
 
 .navbar-header img { 
     width: 250px;
+    background-color:white
 }
 
 header col {
