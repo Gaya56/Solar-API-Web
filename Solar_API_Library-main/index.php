@@ -21,7 +21,7 @@
 
     <style>
         .header-title {
-            font-size: 3rem; /* Increase the font size */
+            font-size: 2.5rem; /* Adjusted font size */
             text-align: center; /* Center the text */
             white-space: nowrap; /* Ensure the title is on one line */
         }
@@ -34,10 +34,19 @@
             padding: 10px 0; /* Reduce the header height */
         }
         .address_container {
-            background-color:darkgreen; /* Match the header color */
+            background-color: darkgreen; /* Match the header color */
         }
         .app_controls, #gsa_data {
             margin-bottom: 20px;
+        }
+        .google_map_container {
+            padding: 0; /* Remove padding to fit better */
+        }
+        #map {
+            margin-bottom: 1rem; /* Add margin for spacing */
+        }
+        #canvas_div {
+            display: none; /* Hide if not used */
         }
     </style>
 
@@ -115,11 +124,16 @@
                 <div>
                     <input type="checkbox" id="toggleAllOverlays" onclick="toggleAllOverlays()" checked> Display <br />Overlay
                 </div>
+                <div class="google_solar_api_data">
+                    <h2>Google Solar API Data</h2>
+                    <p>Max Module Count: 154 modules</p>
+                    <p>Max Annual Sunshine: 1605 hr</p>
+                    <p>Roof Area: 949.1 m<sup>2</sup></p>
+                </div>
             </div>
 
             <!-- Google Solar API Building Insights -->
             <div>
-                <h2>Google Solar API Data</h2>
                 <div id="gsa_data"></div>
                 <div>
                     <label for="system_modules_watts">Module output (watts):</label><br />
